@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SMMS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    form {
+      margin: 50px auto;
+      max-width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form action="/submit" method="post">
+    <label for="h1">Hour 1:</label>
+    <input type="number" name="h1" id="h1" required>
+
+    <label for="m1">Minute 1:</label>
+    <input type="number" name="m1" id="m1" required>
+
+    <label for="h2">Hour 2:</label>
+    <input type="number" name="h2" id="h2" required>
+
+    <label for="m2">Minute 2:</label>
+    <input type="number" name="m2" id="m2" required>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
